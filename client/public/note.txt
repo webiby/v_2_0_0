@@ -1,0 +1,3 @@
+Publish website
+ERP system mainly for day to day transaction record
+admin panel with editing rights

@@ -1,0 +1,47 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.scroll-img {
+  max-width: 250px;
+  height: 7rem;
+  padding: 0 15px;
+  object-fit: cover;
+}
+
+img:last-of-type {
+  padding-left: 0;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 7rem;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+}
+
+.scroll-rtl {
+  display: flex;
+  animation: swipe var(--speed) linear infinite backwards;
+}
+
+.scroll-ltr {
+  display: flex;
+  animation: swipe var(--speed) linear infinite forwards;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
